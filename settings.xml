@@ -1,0 +1,30 @@
+<settings>
+	<servers>
+		<server>
+			<id>exchange-server</id>
+			<username>${username}</username>
+			<password>${password}</password>
+		</server>
+	</servers>
+	<profiles>
+		<profile>
+			<id>archetype-repository</id>
+			<repositories>
+				<repository>
+					<id>archetype</id>
+					<name>mule repository</name>
+					<url>https://repository-master.mulesoft.org/nexus/content/repositories/public</url>
+					<releases>
+						<enabled>true</enabled>
+						<checksumpolicy>fail</checksumpolicy>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+						<checksumpolicy>warn</checksumpolicy>
+					</snapshots>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+</settings>
+

@@ -1,0 +1,47 @@
+id: custom-message-logging
+name: custom-message-logging
+description: custom message logging policy
+category: Custom
+type: custom
+resourceLevelSupported: true
+encryptionSupported: false
+standalone: true
+requiredCharacteristics: []
+providedCharacteristics: []
+configuration: 
+  - propertyName: PrintRequestPayload
+    name: Print Request Payload
+    description: To Log Request Payload
+    type: boolean
+    allowMultiple: false
+    defaultValue: false
+    optional: true
+    sensitive: false
+    
+  - propertyName: PrintInboundHeaders
+    name: Print Inbound Headers
+    description: To Log Inboud Headers
+    type: keyvalues
+    allowMultiple: true
+    defaultValue: false
+    optional: true
+    sensitive: false
+
+  - propertyName: PrintResponsePayload
+    name: Print Response Payload
+    description: To Log Response Payload
+    type: boolean
+    allowMultiple: false
+    defaultValue: false
+    optional: true
+    sensitive: false
+    
+  - propertyName: PrintOutboundHeaders
+    name: Print Outbound Headers
+    description: To log Outbound Headers
+    type: keyvalues
+    allowMultiple: true
+    defaultValue: false
+    optional: true
+    sensitive: false
+ 
